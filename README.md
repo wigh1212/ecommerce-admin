@@ -26,5 +26,46 @@ CSS: Tailwind CSS
 <br>
 <br>
 <hr />
-<b>3.프로젝트 구조 (Project Structure)</b>
+<b>3.화면 구성 </b>
 <hr />
+<br>
+<img width="1903" height="985" alt="image" src="https://github.com/user-attachments/assets/8ef7d176-fdd3-4721-a34f-4eab2ea4cf9d" />
+<br>
+로그인
+<br>
+<img width="1889" height="944" alt="image" src="https://github.com/user-attachments/assets/d3ccf952-4fb1-494a-8d00-4115fddf0eaa" />
+<br>
+대시보드 ( 미구현 - 주문 기능 개발 x )
+<br>
+<img width="1898" height="782" alt="image" src="https://github.com/user-attachments/assets/bef62be0-e3d6-4fd4-a6a3-b64471845651" />
+<br>
+가맹점 정보
+<br>
+<img width="1878" height="951" alt="image" src="https://github.com/user-attachments/assets/d5d04c40-129c-44fb-ad02-da4b5ed7b132" />
+<br>
+상품 등록 화면 구성 ( 옵션 매칭 팝업 포함 ) 
+<br>
+<img width="1871" height="956" alt="image" src="https://github.com/user-attachments/assets/fc2e7cdd-166e-4ec4-b9b5-c929bfd2424a" />
+<br>
+옵션 등록 화면 구성 ( 옵션 아이템 팝업 포함) 
+<br>
+<img width="1882" height="956" alt="image" src="https://github.com/user-attachments/assets/2521f19e-c382-4a0c-ae17-6a432f123f22" />
+<br>
+카테고리 등록 ( 카테고리 상품 매칭 팝업 포함 ) 
+<br>
+<img width="1900" height="940" alt="image" src="https://github.com/user-attachments/assets/5f0fec08-3f51-4e44-a93d-e73f29361952" />
+<br>
+가맹점 해시태그 매칭 
+<br>
+<img width="1881" height="904" alt="image" src="https://github.com/user-attachments/assets/9edb8169-2b97-4b91-b33a-33c5405c77ae" />
+<br>
+유저관리 화면
+<br>
+<img width="1887" height="964" alt="image" src="https://github.com/user-attachments/assets/62e4bce8-31b6-48fd-b4f6-80a7d2c8790f" />
+<br>
+태그관리 화면  ( 배너관리 , 관리자로그 개발 진행중 )
+
+
+
+
+
