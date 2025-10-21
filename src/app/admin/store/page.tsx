@@ -1,10 +1,54 @@
+"use client"
 import { useEffect, useRef, useState } from "react";
+import StoreListTable from "./ui/StoreListTable";
+import { getStoreList } from "./model/storeApi";
+import StoreInfoTabs from "./ui/StoreInfoTabs";
 
 export default function Store() {
-   const [leftWidth, setLeftWidth] = useState(50); // 초기값 50%
+  const [leftWidth, setLeftWidth] = useState(50); // 초기값 50%
   const isResizing = useRef(false);
+  const [data, setData] = useState<any[]>([]);
+  const [loading, setLoading] = useState(false);
+  const [selectedId, setId] = useState(null);
+  const onSelectId=(id:any) => {
+    setId(id);
+  }
+  
+  const refresh = async () => {
+    setLoading(true);
+    try {
+      const response = await getStoreList();
+      if (response.result === "SUCCESS") {
+        setData(response.data ?? []);
+      } else {
+        alert(response.message);
+      }
+    } catch (err: any) {
+      alert(err.message || "데이터 로드 실패");
+    }
+    finally {
+      setLoading(false);
+    }
+  };
+
+  const init = async () => {
+    setLoading(true);
+    try{
+      const response = await getStoreList();
+      if (response.result === "SUCCESS") {
+          setData(response.data ?? []);      
+      } else {
+        alert(response.message);
+      }
+    } catch (err: any) {
+      alert(err.message || "데이터 로드 실패");
+    }finally {
+      setLoading(false);
+    }
+  }
 
   useEffect(() => {
+    init();
     const handleMouseMove = (e: MouseEvent) => {
       if (!isResizing.current) return;
 
@@ -16,7 +60,6 @@ export default function Store() {
         setLeftWidth(newLeftWidth);
       }
     };
-
     const handleMouseUp = () => {
       isResizing.current = false;
     };
@@ -34,14 +77,23 @@ export default function Store() {
     isResizing.current = true;
   };
 
+
+
+  useEffect(() => {
+    console.log("Selected ID changed:", selectedId);
+  }, [selectedId]);
+
+
+
   return (
     <div className="flex flex-row h-screen select-none">
       {/* 왼쪽 리스트 영역 */}
       <div
-        className="bg-gray-100 p-6 whitespace-nowrap overflow-x-auto"
+        className="bg-gray-100 p-6 whitespace-nowrap overflow-auto"
         style={{ width: `${leftWidth}%` }}
       >
-        <h1 className="text-2xl font-bold mb-4">리스트 영역ddddddddddddddddddddddddd</h1>
+        <h1 className="text-2xl font-bold mb-4">매장 리스트</h1>
+        <StoreListTable items={data ? data : []} onRefresh={refresh} loading={loading} selectedId={selectedId} onSelect={onSelectId} />
       </div>
 
       {/* 가운데 '|' 구분선 */}
@@ -57,7 +109,7 @@ export default function Store() {
         className="bg-white p-6 whitespace-nowrap overflow-x-auto flex-1"
         style={{ width: `${100 - leftWidth}%` }}
       >
-        <h1 className="text-2xl font-bold mb-4">상세페이지 영역</h1>
+          <StoreInfoTabs storeId={Number(selectedId)} />
       </div>
     </div>
   );

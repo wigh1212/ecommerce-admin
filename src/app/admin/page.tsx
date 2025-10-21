@@ -7,6 +7,9 @@ import Header from "../../../shared/components/main/Header";
 import SideTab from "../../../shared/components/main/SideTab";
 import Dashboard from "./dashboard/page";
 import Store from "./store/page";
+import User from "./user/page";
+import { getAdmin } from "../../../shared/utils/jwtParser";
+import Tag from "./setting/tag/page";
 interface Item {
   id: number;
   name: string;
@@ -17,6 +20,8 @@ export default function MainPage() {
   const router = useRouter();
   const [selectedItem, setSelectedItem] = useState<Item | null>(null);
   const [activeTab, setActiveTab] = useState("Dashboard"); 
+  
+  const admin= getAdmin();
 
   // 로그인 안 되어 있으면 login으로 이동
   useEffect(() => {
@@ -44,15 +49,15 @@ export default function MainPage() {
 
       case "유저관리":
         return (
-          <div className="flex-1 flex items-center justify-center text-gray-500">
-            선택된 탭이 없습니다.
+          <div className="flex-1 overflow-auto">
+            <User/>
           </div>
         );
 
-      default:
+       case "태그관리":
         return (
-          <div className="flex-1 flex items-center justify-center text-gray-500">
-            선택된 탭이 없습니다.
+           <div className="flex-1 overflow-auto">
+            <Tag/>
           </div>
         );
     }

@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <header className="flex justify-between items-center p-4 bg-gray-800 text-white">
-      <div className="font-bold text-xl cursor-pointer" onClick={() => router.push("/main")}>
+      <div className="font-bold text-xl cursor-pointer" onClick={() => router.push("/admin")}>
         관리자 로고
       </div>
       <div>

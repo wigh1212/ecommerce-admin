@@ -1,8 +1,8 @@
 
 // 로그인 응답 구조
-export interface Response {
+export interface Response<T> {
   result: "SUCCESS" | "FAILURE";
-  data: string | null;
+  data: T | null;
   message: string;
   errorCode: string | null;
 }
@@ -14,4 +14,14 @@ export interface AdminTokenPayload {
   name: string;
   type: string;
   storeId: string;
+}
+
+
+
+export interface fileUploadResponse {
+  contentType: string;
+  imagePath: string;
+  name: string;
+  originalFilename: string;
+  size: string;
 }
