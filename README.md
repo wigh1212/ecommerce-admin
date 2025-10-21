@@ -1,36 +1,30 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<b>1. 프로젝트 개요</b>
+<hr />
+본 프로젝트는 지금까지 학습해온 백엔드 개발 지식을 활용하여 , 설계에 따른 페이지 구성 방법을 위해 제작한 포트폴리오입니다.
+이커머스 어드민 페이지를 주제로, 설계 단계부터 배포까지 모든 과정을 혼자서 수행했습니다.
+단순한 기능 구현이 아니라 객체지향적 설계, RESTful API 규칙, CI/CD 자동화 등 실무 수준의 개발 프로세스를 스스로 구축하며 학습을 체화하는 것을 목표로 했습니다.
 
-## Getting Started
+<hr />
 
-First, run the development server:
+<b>2. 기술 선택 이유</b>
+<hr />
+지금까지는 JSP를 활용한 페이지 구축 경험이 대부분이었습니다.
+하지만 프론트엔드 기술이 빠르게 발전함에 따라, 평소 관심을 가지고 있던 Next.js를 사용해 실제 웹 서비스를 직접 구축해보는 것을 목표로 삼았습니다.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Next.js를 사용하면서 느낀 점은, 컴포넌트 기반 구조를 통해 코드의 재사용성과 유지보수성이 크게 향상된다는 것이었습니다.
+특히 백엔드 설계 경험을 바탕으로 컴포넌트를 효율적으로 설계했을 때, 전체적인 페이지 구성과 개발 생산성이 훨씬 높아진다는 점을 체감했습니다.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<br>
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+<b>3.기술 스택 (Tech Stack)</b>
+<hr />
+프레임워크: Next.js 15 (App Router 기반) , TypeScript
+<br>
+CSS: Tailwind CSS
+<br>
+배포 환경: AWS EC2
+<br>
+<br>
+<hr />
+<b>3.프로젝트 구조 (Project Structure)</b>
+<hr />
