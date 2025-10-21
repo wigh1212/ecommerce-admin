@@ -2,8 +2,11 @@
 
 import { usePathname, useRouter } from "next/navigation";
 import { useMemo, useState } from "react";
+import { getAdmin } from "../../utils/jwtParser";
 
-export const tabs: { name: string; path: string; down: { name: string; path: string }[] | null }[] = [
+
+
+export const tabs: { name: string; path: string; down: { name: string; path: string }[] | null }[] = getAdmin()?.type==="ADMIN"? [
   { name: "Dashboard", path: "/admin/dashboard", down: null },
   { name: "가맹점", path: "/admin/store", down: null },
   { name: "유저관리", path: "/admin/user", down: null },
@@ -16,6 +19,9 @@ export const tabs: { name: string; path: string; down: { name: string; path: str
       { name: "관리자로그", path: "/admin/setting/admin/log" },
     ],
   },
+] : [
+  { name: "Dashboard", path: "/admin/dashboard", down: null },
+  { name: "가맹점", path: "/admin/store", down: null }  
 ];
 
 interface SideTabProps {

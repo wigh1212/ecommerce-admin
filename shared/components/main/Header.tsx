@@ -22,7 +22,7 @@ export default function Header() {
       <div>
         {isLoggedIn() && (
           <>
-            <span className="mr-4">{admin?.name}</span>
+            <span className="mr-4">{admin?.displayName}</span>
             <button
               onClick={handleLogout}
               className="bg-red-500 px-3 py-1 rounded hover:bg-red-600"

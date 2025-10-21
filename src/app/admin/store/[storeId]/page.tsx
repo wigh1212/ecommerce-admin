@@ -136,8 +136,8 @@ return (
             name="name"
             value={formData.name}
             onChange={handleChange}
-            type="text"
-            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+             readOnly
+            className="w-full border border-gray-300 rounded px-3 py-2 bg-gray-100 cursor-not-allowed focus:outline-none"
           />
         </div>
 
@@ -148,7 +148,8 @@ return (
             value={formData.businessNumber}
             onChange={handleChange}
             type="text"
-            className="w-full border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            readOnly
+            className="w-full border border-gray-300 rounded px-3 py-2 bg-gray-100 cursor-not-allowed focus:outline-none"
           />
         </div>
 
