@@ -20,13 +20,16 @@ Next.js를 사용하면서 느낀 점은, 컴포넌트 기반 구조를 통해 �
 <hr />
 프레임워크: Next.js 15 (App Router 기반) , TypeScript
 <br>
+<br>
 CSS: Tailwind CSS
+<br>
 <br>
 배포 환경: AWS EC2
 <br>
 <br>
+<br>
 <hr />
-<b>3.화면 구성 </b>
+<b>4.화면 구성 </b>
 <hr />
 <br>
 <img width="1903" height="985" alt="image" src="https://github.com/user-attachments/assets/8ef7d176-fdd3-4721-a34f-4eab2ea4cf9d" />
