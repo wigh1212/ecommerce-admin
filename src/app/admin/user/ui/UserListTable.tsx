@@ -1,5 +1,5 @@
 
-import TableLayout from "../../../../../shared/components/ui/Table";
+import TableLayout from "../../../../../shared/components/ui/TableLayout";
 import {  User, userTableProps } from "../model/userTypes";
 export default function UserListTable({
   items,

@@ -1,5 +1,5 @@
 
-import TableLayout from "../../../../../../shared/components/ui/Table";
+import TableLayout from "../../../../../../shared/components/ui/TableLayout";
 import { Tag, tagTableProps } from "../model/tagTypes";
 export default function TagListTable({
   items,

@@ -1,5 +1,5 @@
 
-import TableLayout from "../../../../../shared/components/ui/Table";
+import TableLayout from "../../../../../shared/components/ui/TableLayout";
 import { Store, storeTableProps } from "../model/storeTypes";
 export default function StoreListTable({
   items,

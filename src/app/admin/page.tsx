@@ -10,6 +10,7 @@ import Store from "./store/page";
 import User from "./user/page";
 import { getAdmin } from "../../../shared/utils/jwtParser";
 import Tag from "./setting/tag/page";
+import Banner from "./setting/banner/page";
 interface Item {
   id: number;
   name: string;
@@ -58,6 +59,12 @@ export default function MainPage() {
         return (
            <div className="flex-1 overflow-auto">
             <Tag/>
+          </div>
+        );
+       case "배너관리":
+        return (
+           <div className="flex-1 overflow-auto">
+            <Banner/>
           </div>
         );
     }

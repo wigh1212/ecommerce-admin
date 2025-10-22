@@ -81,7 +81,7 @@ return (
       <h2 className="text-lg font-bold mb-6 text-center">태그 등록</h2>
       <form className="space-y-4"  onSubmit={handleSubmit} >
         <div>
-          <label className="block mb-1 font-medium">이름<span className="text-red-500">*</span></label>
+          <label className="block mb-1 font-medium">태그명<span className="text-red-500">*</span></label>
            <input
             name="name"
             value={formData.name}
