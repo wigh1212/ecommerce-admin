@@ -66,8 +66,11 @@ CSS: Tailwind CSS
 <br>
 <img width="1887" height="964" alt="image" src="https://github.com/user-attachments/assets/62e4bce8-31b6-48fd-b4f6-80a7d2c8790f" />
 <br>
-태그관리 화면  ( 배너관리 , 관리자로그 개발 진행중 )
-
+태그관리 화면  
+<br>
+<img width="1915" height="950" alt="image" src="https://github.com/user-attachments/assets/2083f00e-f77d-4725-9df2-3078e3941e01" />
+<br>
+태그관리 화면  (  관리자로그 개발 진행중 )
 
 
 
