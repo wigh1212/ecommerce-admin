@@ -24,7 +24,7 @@ Next.js를 사용하면서 느낀 점은, 컴포넌트 기반 구조를 통해 �
 CSS: Tailwind CSS
 <br>
 <br>
-배포 환경: AWS EC2
+<s>배포 환경: AWS EC2</s>
 <br>
 <br>
 <br>
