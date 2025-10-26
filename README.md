@@ -70,7 +70,13 @@ CSS: Tailwind CSS
 <br>
 <img width="1915" height="950" alt="image" src="https://github.com/user-attachments/assets/2083f00e-f77d-4725-9df2-3078e3941e01" />
 <br>
-태그관리 화면  (  관리자로그 개발 진행중 )
+태그관리 화면  
+<br>
+<img width="1907" height="923" alt="image" src="https://github.com/user-attachments/assets/f49536c9-96ee-4931-8734-b695183c2f1f" />
+<br>
+관리자로그 화면
+
+
 
 
 
