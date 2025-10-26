@@ -29,6 +29,7 @@ export default function StoreListTable({
       onRowClick={(row) => onSelect?.(row.id)}
       selectedRowId={selectedId}
       minWidth="800px"
+      popupUrl="/admin/store/add"
     />
   );
 }

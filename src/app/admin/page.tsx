@@ -11,6 +11,7 @@ import User from "./user/page";
 import { getAdmin } from "../../../shared/utils/jwtParser";
 import Tag from "./setting/tag/page";
 import Banner from "./setting/banner/page";
+import AdminLog from "./setting/admin/log/page";
 interface Item {
   id: number;
   name: string;
@@ -65,6 +66,12 @@ export default function MainPage() {
         return (
            <div className="flex-1 overflow-auto">
             <Banner/>
+          </div>
+        );
+        case "관리자로그":
+        return (
+           <div className="flex-1 overflow-auto">
+            <AdminLog/>
           </div>
         );
     }
