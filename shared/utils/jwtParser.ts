@@ -1,7 +1,11 @@
 import { AdminTokenPayload } from "../commonResponse/commonType";
 
 export function getAdmin(): AdminTokenPayload | null {
-  const token = localStorage.getItem("token");
+  let token: string | null = null;
+
+  if (typeof window !== "undefined") {
+    token = localStorage.getItem("token");
+  }
   if (!token) return null;
 
   try {

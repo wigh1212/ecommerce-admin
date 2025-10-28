@@ -30,7 +30,9 @@ export default function LoginForm() {
     try {
       const response = await login({ userName, password });
       if (response.result === "SUCCESS") {
-          localStorage.setItem("token",response.data as string);
+          if (typeof window !== "undefined") {
+             localStorage.setItem("token",response.data as string);
+          }
           router.push("/admin"); // ✅ redirect 대신 push 사용
       
       } else {
